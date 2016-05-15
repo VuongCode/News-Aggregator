@@ -1,0 +1,16 @@
+<div align="center">
+  <h3>Add an Article!</h3>
+    <div class="form">
+      <form action="/articles/new" method="POST">
+        <label for="article_title">Your Article Title: </label>
+        <input type="text" id="article_title" name="article_title" required>
+        <label for="article_url">Your Article URL:</label>
+        <input type="url" id="article_url" name="article_url" value="<% @article_url %>" required>
+        <label for="article_description">Your Article Description:</label>
+        <input type="text" id="article_description" name="article_description" required>
+
+        <input type="submit">
+      </form>
+    </div>
+<div>
+  <a href="/articles"> Go back! </a>
